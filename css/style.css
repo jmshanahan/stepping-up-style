@@ -1,4 +1,119 @@
-h1 {
-  font-size: 3rem;
+/* font-family: 'Source Sans Pro', sans-serif; */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1rem;
+  color: #404040;
   text-align: center;
+  display: flex;
+}
+h1 {
+  font-size: 2.15;
+  font-weight: 300;
+  color: #fff;
+  margin: 0;
+}
+h1 + p {
+  color: #f18119;
+  font-weight: 900;
+  font-size: 1.3125rem;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 1.3125rem;
+  margin: 0;
+}
+h2 + p {
+  font-weight: 900;
+  color: #f18119;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+.top-text {
+  font-size: 0.625rem;
+  font-weight: 900;
+  color: #f18119;
+  text-transform: uppercase;
+  order: -1;
+}
+.fine-print {
+  font-size: 0.625rem;
+  letter-spacing: 1px;
+}
+strong {
+  font-weight: 900;
+}
+/* Intro section */
+.intro {
+  background-color: #404040;
+  background-image: url(../images/jon-tyson.jpg);
+  background-size: cover;
+  background-position: centre;
+}
+
+/* Main content */
+.main-content {
+  padding: 2em 1em;
+}
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.container-intro {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* form */
+.email-collector {
+  text-align: center;
+  width: 80%;
+  max-width: 300px;
+}
+form {
+  margin: 0 auto;
+}
+input,
+.btn {
+  width: 100%;
+  border-radius: 3px;
+}
+input {
+  font-family: inherit;
+  text-align: inherit;
+  margin-bottom: 0.75em;
+  padding: 0.25em;
+  border: 1px solid #404040;
+}
+/* media query */
+@media (min-width: 500px) {
+  body {
+    font-size: 1.25rem;
+    background-color: bisque;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2,
+  h1 + p {
+    font-size: 1.75rem;
+  }
+  .intro,
+  .main-content {
+    width: 50%;
+    min-height: 100vh;
+  }
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container-intro {
+    height: 100%;
+  }
 }
