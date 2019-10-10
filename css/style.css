@@ -33,11 +33,15 @@ h2 + p {
   text-transform: uppercase;
 }
 .top-text {
+  margin: 0;
+  padding-top: 2px;
   font-size: 0.625rem;
   font-weight: 900;
   color: #f18119;
   text-transform: uppercase;
   order: -1;
+  border-top: 5px solid #f18119;
+  border-image: linear-gradient(270deg, #ff713b, #ffa51d) 1;
 }
 .fine-print {
   font-size: 0.625rem;
@@ -50,6 +54,7 @@ strong {
 .intro {
   background-color: #404040;
   background-image: url(../images/jon-tyson.jpg);
+  background-blend-mode: multiply;
   background-size: cover;
   background-position: centre;
 }
